@@ -2,6 +2,370 @@
 <!-- Generated with glade 3.38.2 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
+  <object class="GtkBox" id="_preferences_box">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="margin-start">25</property>
+    <property name="margin-end">25</property>
+    <property name="orientation">vertical</property>
+    <child>
+      <object class="GtkLabel">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="halign">start</property>
+        <property name="margin-bottom">6</property>
+        <property name="label" translatable="yes">More Settings</property>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+        <property name="position">0</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkFrame" id="_preferences_frame">
+        <property name="width-request">364</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="label-xalign">0</property>
+        <property name="label-yalign">0</property>
+        <property name="shadow-type">none</property>
+        <child>
+          <object class="GtkListBox" id="_secondary_settings_box">
+            <property name="name">_secondary_settings_box</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="selection-mode">none</property>
+            <child>
+              <object class="GtkListBoxRow">
+                <property name="name">boxes</property>
+                <property name="width-request">-1</property>
+                <property name="height-request">50</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="activatable">False</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="valign">center</property>
+                        <property name="margin-left">10</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-start">10</property>
+                        <property name="margin-end">10</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Frames per second</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkComboBoxText" id="_frames_combobox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="valign">center</property>
+                            <property name="active-id">1</property>
+                            <items>
+                              <item id="0" translatable="yes">15</item>
+                              <item id="1" translatable="yes">30</item>
+                              <item id="2" translatable="yes">60</item>
+                            </items>
+                            <signal name="changed" handler="on__frames_combobox_changed" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="pack-type">end</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkListBoxRow">
+                <property name="name">boxes</property>
+                <property name="width-request">-1</property>
+                <property name="height-request">50</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="activatable">False</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-left">10</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-start">10</property>
+                        <property name="margin-end">10</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Video format</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkComboBoxText" id="_formats_combobox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="valign">center</property>
+                            <signal name="changed" handler="on__formats_combobox_changed" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="pack-type">end</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkListBoxRow">
+                <property name="name">boxes</property>
+                <property name="width-request">-1</property>
+                <property name="height-request">50</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkBox" id="_quality_video_box">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="valign">center</property>
+                        <property name="margin-left">10</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-start">10</property>
+                        <property name="margin-end">10</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">High quality mode</property>
+                            <property name="justify">center</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkSwitch" id="_quality_video_switcher">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <signal name="state-set" handler="on__quality_video_switcher_state_set" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="pack-type">end</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkListBoxRow">
+                <property name="width-request">-1</property>
+                <property name="height-request">50</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="activatable">False</property>
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkBox" id="_general_settings_box">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="valign">center</property>
+                        <property name="margin-left">10</property>
+                        <property name="margin-right">10</property>
+                        <property name="margin-start">10</property>
+                        <property name="margin-end">10</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Folder for saving the video</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkFileChooserButton" id="_video_folder_button">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="action">select-folder</property>
+                            <property name="do-overwrite-confirmation">True</property>
+                            <property name="title" translatable="yes"/>
+                            <signal name="file-set" handler="on__video_folder_button_file_set" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="pack-type">end</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child type="label">
+          <object class="GtkLabel">
+            <property name="can-focus">False</property>
+          </object>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+        <property name="position">1</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="vexpand">True</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkButton" id="_about_button">
+            <property name="label" translatable="yes">About Footage</property>
+            <property name="name">_about_button</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="halign">center</property>
+            <signal name="clicked" handler="on__about_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="pack-type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="expand">False</property>
+        <property name="fill">True</property>
+        <property name="position">2</property>
+      </packing>
+    </child>
+  </object>
+  <object class="GtkPopover" id="popover1">
+    <property name="can-focus">False</property>
+    <child>
+      <object class="GtkBox">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-left">10</property>
+        <property name="margin-right">10</property>
+        <property name="margin-start">10</property>
+        <property name="margin-end">10</property>
+        <property name="margin-top">10</property>
+        <property name="margin-bottom">10</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkModelButton" id="_popover_preferences_button">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="text" translatable="yes">Preferences</property>
+            <signal name="clicked" handler="on__popover_preferences_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkModelButton" id="_popover_about_button">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="text" translatable="yes">About Footage</property>
+            <signal name="clicked" handler="on__popover_about_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
   <template class="RecAppWindow" parent="GtkApplicationWindow">
     <property name="can-focus">False</property>
     <property name="resizable">False</property>
@@ -611,333 +975,6 @@
                 <property name="position">1</property>
               </packing>
             </child>
-            <child>
-              <object class="GtkBox" id="_preferences_box">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="margin-start">25</property>
-                <property name="margin-end">25</property>
-                <property name="orientation">vertical</property>
-                <child>
-                  <object class="GtkLabel">
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="halign">start</property>
-                    <property name="margin-bottom">6</property>
-                    <property name="label" translatable="yes">More Settings</property>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkFrame" id="_preferences_frame">
-                    <property name="width-request">364</property>
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="label-xalign">0</property>
-                    <property name="label-yalign">0</property>
-                    <property name="shadow-type">none</property>
-                    <child>
-                      <object class="GtkListBox" id="_secondary_settings_box">
-                        <property name="name">_secondary_settings_box</property>
-                        <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="selection-mode">none</property>
-                        <child>
-                          <object class="GtkListBoxRow" id="_quality_rowbox">
-                            <property name="name">boxes</property>
-                            <property name="width-request">-1</property>
-                            <property name="height-request">50</property>
-                            <property name="visible">True</property>
-                            <property name="can-focus">True</property>
-                            <property name="activatable">False</property>
-                            <child>
-                              <object class="GtkBox">
-                                <property name="visible">True</property>
-                                <property name="can-focus">False</property>
-                                <property name="orientation">vertical</property>
-                                <child>
-                                  <object class="GtkBox">
-                                    <property name="visible">True</property>
-                                    <property name="can-focus">False</property>
-                                    <property name="valign">center</property>
-                                    <property name="margin-left">10</property>
-                                    <property name="margin-right">10</property>
-                                    <property name="margin-start">10</property>
-                                    <property name="margin-end">10</property>
-                                    <child>
-                                      <object class="GtkLabel">
-                                        <property name="visible">True</property>
-                                        <property name="can-focus">False</property>
-                                        <property name="label" translatable="yes">Frames per second</property>
-                                      </object>
-                                      <packing>
-                                        <property name="expand">False</property>
-                                        <property name="fill">True</property>
-                                        <property name="position">0</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkComboBoxText" id="_frames_combobox">
-                                        <property name="visible">True</property>
-                                        <property name="can-focus">False</property>
-                                        <property name="valign">center</property>
-                                        <property name="active-id">1</property>
-                                        <items>
-                                          <item id="0" translatable="yes">15</item>
-                                          <item id="1" translatable="yes">30</item>
-                                          <item id="2" translatable="yes">60</item>
-                                        </items>
-                                        <signal name="changed" handler="on__frames_combobox_changed" swapped="no"/>
-                                      </object>
-                                      <packing>
-                                        <property name="expand">False</property>
-                                        <property name="fill">True</property>
-                                        <property name="pack-type">end</property>
-                                        <property name="position">1</property>
-                                      </packing>
-                                    </child>
-                                  </object>
-                                  <packing>
-                                    <property name="expand">True</property>
-                                    <property name="fill">True</property>
-                                    <property name="position">0</property>
-                                  </packing>
-                                </child>
-                              </object>
-                            </child>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="GtkListBoxRow" id="_audio_rowbox">
-                            <property name="name">boxes</property>
-                            <property name="width-request">-1</property>
-                            <property name="height-request">50</property>
-                            <property name="visible">True</property>
-                            <property name="can-focus">True</property>
-                            <property name="activatable">False</property>
-                            <child>
-                              <object class="GtkBox">
-                                <property name="visible">True</property>
-                                <property name="can-focus">False</property>
-                                <property name="orientation">vertical</property>
-                                <child>
-                                  <object class="GtkBox">
-                                    <property name="visible">True</property>
-                                    <property name="can-focus">False</property>
-                                    <property name="margin-left">10</property>
-                                    <property name="margin-right">10</property>
-                                    <property name="margin-start">10</property>
-                                    <property name="margin-end">10</property>
-                                    <child>
-                                      <object class="GtkLabel">
-                                        <property name="visible">True</property>
-                                        <property name="can-focus">False</property>
-                                        <property name="label" translatable="yes">Video format</property>
-                                      </object>
-                                      <packing>
-                                        <property name="expand">False</property>
-                                        <property name="fill">True</property>
-                                        <property name="position">0</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkComboBoxText" id="_formats_combobox">
-                                        <property name="visible">True</property>
-                                        <property name="can-focus">False</property>
-                                        <property name="valign">center</property>
-                                        <signal name="changed" handler="on__formats_combobox_changed" swapped="no"/>
-                                      </object>
-                                      <packing>
-                                        <property name="expand">False</property>
-                                        <property name="fill">True</property>
-                                        <property name="pack-type">end</property>
-                                        <property name="position">1</property>
-                                      </packing>
-                                    </child>
-                                  </object>
-                                  <packing>
-                                    <property name="expand">True</property>
-                                    <property name="fill">True</property>
-                                    <property name="position">0</property>
-                                  </packing>
-                                </child>
-                              </object>
-                            </child>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="GtkListBoxRow">
-                            <property name="name">boxes</property>
-                            <property name="width-request">-1</property>
-                            <property name="height-request">50</property>
-                            <property name="visible">True</property>
-                            <property name="can-focus">True</property>
-                            <child>
-                              <object class="GtkBox">
-                                <property name="visible">True</property>
-                                <property name="can-focus">False</property>
-                                <property name="orientation">vertical</property>
-                                <child>
-                                  <object class="GtkBox" id="_quality_video_box">
-                                    <property name="visible">True</property>
-                                    <property name="can-focus">False</property>
-                                    <property name="valign">center</property>
-                                    <property name="margin-left">10</property>
-                                    <property name="margin-right">10</property>
-                                    <property name="margin-start">10</property>
-                                    <property name="margin-end">10</property>
-                                    <child>
-                                      <object class="GtkLabel">
-                                        <property name="visible">True</property>
-                                        <property name="can-focus">False</property>
-                                        <property name="label" translatable="yes">High quality mode</property>
-                                        <property name="justify">center</property>
-                                      </object>
-                                      <packing>
-                                        <property name="expand">False</property>
-                                        <property name="fill">True</property>
-                                        <property name="position">0</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkSwitch" id="_quality_video_switcher">
-                                        <property name="visible">True</property>
-                                        <property name="can-focus">True</property>
-                                        <signal name="state-set" handler="on__quality_video_switcher_state_set" swapped="no"/>
-                                      </object>
-                                      <packing>
-                                        <property name="expand">False</property>
-                                        <property name="fill">True</property>
-                                        <property name="pack-type">end</property>
-                                        <property name="position">1</property>
-                                      </packing>
-                                    </child>
-                                  </object>
-                                  <packing>
-                                    <property name="expand">True</property>
-                                    <property name="fill">True</property>
-                                    <property name="position">0</property>
-                                  </packing>
-                                </child>
-                              </object>
-                            </child>
-                          </object>
-                        </child>
-                        <child>
-                          <object class="GtkListBoxRow">
-                            <property name="width-request">-1</property>
-                            <property name="height-request">50</property>
-                            <property name="visible">True</property>
-                            <property name="can-focus">True</property>
-                            <property name="activatable">False</property>
-                            <child>
-                              <object class="GtkBox">
-                                <property name="visible">True</property>
-                                <property name="can-focus">False</property>
-                                <property name="orientation">vertical</property>
-                                <child>
-                                  <object class="GtkBox" id="_general_settings_box">
-                                    <property name="visible">True</property>
-                                    <property name="can-focus">False</property>
-                                    <property name="valign">center</property>
-                                    <property name="margin-left">10</property>
-                                    <property name="margin-right">10</property>
-                                    <property name="margin-start">10</property>
-                                    <property name="margin-end">10</property>
-                                    <child>
-                                      <object class="GtkLabel">
-                                        <property name="visible">True</property>
-                                        <property name="can-focus">False</property>
-                                        <property name="label" translatable="yes">Folder for saving the video</property>
-                                      </object>
-                                      <packing>
-                                        <property name="expand">False</property>
-                                        <property name="fill">True</property>
-                                        <property name="position">0</property>
-                                      </packing>
-                                    </child>
-                                    <child>
-                                      <object class="GtkFileChooserButton" id="_video_folder_button">
-                                        <property name="visible">True</property>
-                                        <property name="can-focus">False</property>
-                                        <property name="action">select-folder</property>
-                                        <property name="do-overwrite-confirmation">True</property>
-                                        <property name="title" translatable="yes"/>
-                                        <signal name="file-set" handler="on__video_folder_button_file_set" swapped="no"/>
-                                      </object>
-                                      <packing>
-                                        <property name="expand">False</property>
-                                        <property name="fill">True</property>
-                                        <property name="pack-type">end</property>
-                                        <property name="position">1</property>
-                                      </packing>
-                                    </child>
-                                  </object>
-                                  <packing>
-                                    <property name="expand">True</property>
-                                    <property name="fill">True</property>
-                                    <property name="position">0</property>
-                                  </packing>
-                                </child>
-                              </object>
-                            </child>
-                          </object>
-                        </child>
-                      </object>
-                    </child>
-                    <child type="label">
-                      <object class="GtkLabel">
-                        <property name="can-focus">False</property>
-                      </object>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkBox">
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="vexpand">True</property>
-                    <property name="orientation">vertical</property>
-                    <child>
-                      <object class="GtkButton" id="_about_button">
-                        <property name="label" translatable="yes">About Footage</property>
-                        <property name="name">_about_button</property>
-                        <property name="visible">True</property>
-                        <property name="can-focus">True</property>
-                        <property name="receives-default">True</property>
-                        <property name="halign">center</property>
-                        <signal name="clicked" handler="on__about_button_clicked" swapped="no"/>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">False</property>
-                        <property name="pack-type">end</property>
-                        <property name="position">0</property>
-                      </packing>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="expand">False</property>
-                    <property name="fill">True</property>
-                    <property name="position">2</property>
-                  </packing>
-                </child>
-              </object>
-              <packing>
-                <property name="name">page2</property>
-                <property name="title" translatable="yes">page2</property>
-                <property name="position">2</property>
-              </packing>
-            </child>
           </object>
           <packing>
             <property name="expand">True</property>
@@ -969,15 +1006,15 @@
                 <property name="transition-type">crossfade</property>
                 <child>
                   <object class="GtkButton" id="_record_button">
-                    <style>
-                      <class name="suggested-action"/>
-                    </style>
                     <property name="label" translatable="yes">Start Recording</property>
                     <property name="name">_record_button</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
                     <signal name="clicked" handler="on__record_button_clicked" swapped="no"/>
+                    <style>
+                      <class name="suggested-action"/>
+                    </style>
                   </object>
                   <packing>
                     <property name="name">page0</property>
@@ -986,15 +1023,15 @@
                 </child>
                 <child>
                   <object class="GtkButton" id="_stop_record_button">
-                    <style>
-                      <class name="destructive-action"/>
-                    </style>
                     <property name="label" translatable="yes">Stop Recording</property>
                     <property name="name">_stop_record_button</property>
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
                     <signal name="clicked" handler="on__stop_record_button_clicked" swapped="no"/>
+                    <style>
+                      <class name="destructive-action"/>
+                    </style>
                   </object>
                   <packing>
                     <property name="name">page1</property>
@@ -1005,6 +1042,26 @@
               </object>
             </child>
           </object>
+        </child>
+        <child>
+          <object class="GtkMenuButton">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="focus-on-click">False</property>
+            <property name="receives-default">True</property>
+            <property name="popover">popover1</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="icon-name">open-menu</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="pack-type">end</property>
+            <property name="position">2</property>
+          </packing>
         </child>
         <child>
           <object class="GtkRevealer" id="_pause_continue_record_button_stack_revealer">
@@ -1061,66 +1118,6 @@
             </child>
           </object>
           <packing>
-            <property name="position">2</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkRevealer" id="_preferences_back_stack_revealer">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="transition-type">crossfade</property>
-            <property name="transition-duration">150</property>
-            <property name="reveal-child">True</property>
-            <child>
-              <object class="GtkStack" id="_preferences_back_stack">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="transition-duration">150</property>
-                <property name="transition-type">crossfade</property>
-                <child>
-                  <object class="GtkButton" id="_preferences_button">
-                    <property name="visible">True</property>
-                    <property name="can-focus">True</property>
-                    <property name="receives-default">True</property>
-                    <signal name="clicked" handler="on__preferences_button_clicked" swapped="no"/>
-                    <child>
-                      <object class="GtkImage">
-                        <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="icon-name">open-menu</property>
-                      </object>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="name">page0</property>
-                    <property name="title" translatable="yes">page0</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkButton" id="_back_button">
-                    <property name="visible">True</property>
-                    <property name="can-focus">True</property>
-                    <property name="receives-default">True</property>
-                    <signal name="clicked" handler="on__back_button_clicked" swapped="no"/>
-                    <child>
-                      <object class="GtkImage">
-                        <property name="visible">True</property>
-                        <property name="can-focus">False</property>
-                        <property name="icon-name">go-next-symbolic-rtl.symbolic</property>
-                      </object>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="name">page1</property>
-                    <property name="title" translatable="yes">page1</property>
-                    <property name="position">1</property>
-                  </packing>
-                </child>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="pack-type">end</property>
             <property name="position">2</property>
           </packing>
         </child>

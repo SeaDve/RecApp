@@ -29,6 +29,7 @@ import pulsectl
 from pydbus import SessionBus
 
 from .recapp_constants import recapp_constants as constants
+from .settings import SettingsWindow
 
 gi.require_version('Gtk', '3.0')
 gi.require_version('Gst', '1.0')
