@@ -23,7 +23,6 @@ import gi
 from .recapp_constants import recapp_constants as constants
 from subprocess import PIPE, Popen
 
-gi.require_version('Gtk', '3.0')
 gi.require_version('Gst', '1.0')
 from gi.repository import Gio, GLib, Gst
 

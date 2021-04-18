@@ -25,10 +25,6 @@ from .preferences import PreferencesWindow
 from .about import AboutWindow
 from .shortcuts import RecAppShortcuts
 
-gi.require_version('Gtk', '3.0')
-gi.require_version('Gst', '1.0')
-gi.require_version('Gdk', '3.0')
-gi.require_version('Handy', '1')
 from gi.repository import Gdk, Gio, GLib, Gtk, Handy
 
 
