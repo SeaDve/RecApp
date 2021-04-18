@@ -15,15 +15,18 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import gi
 import sys
+
+import gi
+gi.require_version('Gtk', '3.0')
+gi.require_version('Handy', '1')
+gi.require_version('Gst', '1.0')
+from gi.repository import Gio, Gtk, Handy, Gst, Gdk  # noqa: E402
 
 from .recapp_constants import recapp_constants as constants
 from .window import RecappWindow
 
-gi.require_version('Gtk', '3.0')
-gi.require_version('Handy', '1')
-from gi.repository import Gio, Gtk, Handy, Gst, Gdk  # noqa: E402
+Gst.init(None)
 
 
 class Application(Gtk.Application):
@@ -34,8 +37,7 @@ class Application(Gtk.Application):
 
     def do_startup(self):
         Gtk.Application.do_startup(self)
-        Gtk.init(sys.argv)
-        Gst.init(sys.argv)
+
         Handy.init()
 
     def do_activate(self):

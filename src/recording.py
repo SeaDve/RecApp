@@ -15,16 +15,15 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from locale import gettext as _
-import signal
 import os
+import signal
 import datetime
-import gi
-from .recapp_constants import recapp_constants as constants
+from locale import gettext as _
 from subprocess import PIPE, Popen
 
-gi.require_version('Gst', '1.0')
 from gi.repository import Gio, GLib, Gst
+
+from .recapp_constants import recapp_constants as constants
 
 
 class Recording:

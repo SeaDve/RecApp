@@ -18,17 +18,16 @@
 import os
 from locale import gettext as _
 
-import gi
+from gi.repository import Gdk, Gio, GLib, Gtk, Handy
+
 from .recording import Recording
 from .recapp_constants import recapp_constants as constants
 from .preferences import PreferencesWindow
 from .about import AboutWindow
 from .shortcuts import RecAppShortcuts
 
-from gi.repository import Gdk, Gio, GLib, Gtk, Handy
-
-
 # TODO Not working yet: record computer sounds (keyboard shortcut already working)
+
 
 @Gtk.Template(resource_path=constants['RESOURCEID'] + '/window.ui')
 class RecappWindow(Handy.ApplicationWindow):
